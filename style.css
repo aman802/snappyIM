@@ -7,9 +7,10 @@ html, body {
     box-sizing: inherit;
 }
 
-body{
-  background-image: url("bg.jpg");
+body.homepage{
+  background-image: url("try.jpg");
   background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
   font-family: "Roboto";
   font-size: 14px;
@@ -24,7 +25,7 @@ body{
 }
 
 .logo{
-  color: #64FFDA;
+  color: white;
   font-size: 50px;
   margin-bottom: 15px;
   margin-top: 0;
@@ -36,7 +37,7 @@ body{
 }
 
 .button{
-  background-color: #0D47A1;
+  background-color: #3F51B5;
   color: white;
   border: none;
   padding: 10px 20px;
@@ -47,4 +48,115 @@ body{
 .button:hover{
   background: white;
   color: #0D47A1;
+}
+
+/*Jana Gana Mana Adhinayak Jaya He! Bharat Bhagya Vidhata!!!*/
+
+.member-area{
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 25%;
+  background-color: #3F51B5;
+  color: white;
+  font-family: "Roboto";
+}
+
+.user-info{
+  padding: 10px;
+  font-weight: bold;
+  border-bottom: solid 2px white;
+}
+
+.logout{
+  float: right;
+  padding: 3px;
+}
+
+.logout:hover{
+  cursor: pointer;
+}
+
+.member{
+  padding: 10px;
+  border-bottom: solid 1px #CFD8DC;
+}
+
+.member:hover{
+  cursor: pointer;
+  background: #CFD8DC;
+  color: #3F51B5;
+}
+
+.LOGO{
+  font-size: 30px;
+  font-weight: bold;
+  position: fixed;
+  padding: 10px;
+  bottom: 0;
+}
+
+.message-area{
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 25%;
+  width: 75%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.chat-info{
+  background-color: #546E7A;
+  padding: 10px;
+  color: white;
+}
+
+.member.active{
+  font-weight: bold;
+  background-color: #CFD8DC;
+  color: #3F51B5
+}
+
+.member.active:hover{
+  cursor:auto;
+}
+
+.messages{
+  background-color: #CFD8DC;
+  height: 82%;
+  padding: 10px;
+  overflow: auto;
+}
+
+.message{
+  background-color: white;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+}
+
+.message-user{
+  background-color: #69F0AE;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+}
+
+.chat-form{
+  position: fixed;
+  bottom: 0;
+  left: 25%;
+  width: 75%;
+  background: #607D8B;
+  padding: 20px;
+}
+
+.chat-message{
+  padding: 10px;
+  border: solid 1px lightgray;
+  border-radius: 4px;
+  display: block;
+  width: 100%;
 }
