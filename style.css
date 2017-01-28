@@ -6,3 +6,45 @@ html, body {
 *, *:before, *:after {
     box-sizing: inherit;
 }
+
+body{
+  background-image: url("bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: "Roboto";
+  font-size: 14px;
+}
+
+.main{
+  width: 500px;
+  margin: auto;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.logo{
+  color: #64FFDA;
+  font-size: 50px;
+  margin-bottom: 15px;
+  margin-top: 0;
+}
+
+.tagline{
+  color: white;
+  font-size: 20px;
+}
+
+.button{
+  background-color: #0D47A1;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.button:hover{
+  background: white;
+  color: #0D47A1;
+}
