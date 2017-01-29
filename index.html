@@ -1,20 +1,46 @@
 <!DOCTYPE html>
 <html>
   <head>
-      <title>Snappy</title>
+      <title>Potter Watch</title>
       <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css" rel="stylesheet"  />
       <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
       <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
       <link href="style.css" rel="stylesheet" />
+      <link rel="shortcut icon" href="harry.ico">
   </head>
   <body class="homepage">
     <div class="main">
-      <h1 class="logo">Snappy</h1>
+      <h1 class="logo">Potter Watch</h1>
       <p class="tagline">
-        <b>An Instant Chat Platform</b>
+        <b>For the Potter Fandom </b>
       </p>
-      <button class="button"><i class="fa fa-google" aria-hidden="true"></i>
+      <button id = "login-potter" class="button-potter"><i class="fa fa-bolt" aria-hidden="true"></i>
+      | Sign in with Pottermore</button>
+      <p></p>
+      <button id = "login-google" class="button-google"><i class="fa fa-google" aria-hidden="true"></i>
  | Sign in with Google</button>
+      <p></p>
+      <button id = "login-facebook" class="button-facebook"><i class="fa fa-facebook" aria-hidden="true"></i>
+| Sign in with Facebook</button>
+<p></p>
+<button id = "login-twitter" class="button-twitter"><i class="fa fa-twitter" aria-hidden="true"></i>
+| Sign in with Twitter</button>
     </div>
+
+    <script src="https://www.gstatic.com/firebasejs/3.6.7/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyD-BtsCEDrWcDbKN7ccvBy-apilWVfX3tE",
+        authDomain: "potterwatch-3b63f.firebaseapp.com",
+        databaseURL: "https://potterwatch-3b63f.firebaseio.com",
+        storageBucket: "potterwatch-3b63f.appspot.com",
+        messagingSenderId: "158531709346"
+      };
+      firebase.initializeApp(config);
+    </script>
+
+    <script type="text/javascript" src="functions.js"></script>
+    <script type="text/javascript" src="app.js"></script>
   </body>
 </html>

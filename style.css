@@ -1,3 +1,14 @@
+@font-face {
+    font-family: 'parryhotter_regular';
+    src: url('fonts/parryhotter_regular.eot');
+    src: url('fonts/parryhotter_regular.eot') format('embedded-opentype'),
+         url('fonts/parryhotter_regular.woff2') format('woff2'),
+         url('fonts/parryhotter_regular.woff') format('woff'),
+         url('fonts/parryhotter_regular.ttf') format('truetype'),
+         url('fonts/parryhotter_regular.svg#parryhotter_regular') format('svg');
+}
+
+
 html, body {
     height: 100%;
     box-sizing: border-box;
@@ -25,31 +36,85 @@ body.homepage{
 }
 
 .logo{
+  font-family: 'parryhotter_regular';
+  font-weight: lighter;
   color: white;
-  font-size: 50px;
+  font-size: 70px;
   margin-bottom: 15px;
   margin-top: 0;
 }
 
 .tagline{
+  font-family: 'parryhotter_regular';
+  font-weight: lighter;
   color: white;
-  font-size: 20px;
+  font-size: 30px;
 }
 
-.button{
-  background-color: #3F51B5;
+.button-google{
+  background-color: #dd4b39;
   color: white;
+  font-weight: bold;
   border: none;
   padding: 10px 20px;
   border-radius: 6px;
   cursor: pointer;
 }
 
-.button:hover{
+.button-google:hover{
   background: white;
-  color: #0D47A1;
+  font-weight: bold;
+  color: #dd4b39;
 }
 
+.button-facebook{
+  background-color: #3b5999;
+  color: white;
+  font-weight: bold;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.button-facebook:hover{
+  background: white;
+  font-weight: bold;
+  color: #3b5999;
+}
+
+.button-twitter{
+  background-color: #55acee;
+  color: white;
+  font-weight: bold;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.button-twitter:hover{
+  background: white;
+  font-weight: bold;
+  color: #55acee;
+}
+
+
+.button-potter{
+  background-color: #9b59b6;
+  color: white;
+  font-weight: bold;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.button-potter:hover{
+  background: white;
+  font-weight: bold;
+  color: #9b59b6;
+}
 /*Jana Gana Mana Adhinayak Jaya He! Bharat Bhagya Vidhata!!!*/
 
 .member-area{
@@ -89,14 +154,6 @@ body.homepage{
   color: #3F51B5;
 }
 
-.LOGO{
-  font-size: 30px;
-  font-weight: bold;
-  position: fixed;
-  padding: 10px;
-  bottom: 0;
-}
-
 .message-area{
   position: fixed;
   top: 0;
@@ -115,7 +172,7 @@ body.homepage{
 
 .member.active{
   font-weight: bold;
-  background-color: #CFD8DC;
+  background-color: #90CAF9;
   color: #3F51B5
 }
 
@@ -124,7 +181,7 @@ body.homepage{
 }
 
 .messages{
-  background-color: #CFD8DC;
+  background-color: #90CAF9;
   height: 82%;
   padding: 10px;
   overflow: auto;

@@ -6,40 +6,19 @@
       <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
       <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
       <link href="style.css" rel="stylesheet" />
+      <link rel="shortcut icon" href="harry.ico">
   </head>
   <body>
     <div class="member-area">
 
       <div class="user-info">
-        Aman Vangani
+        <span id="username"></span>
         <span class="logout">Log Out</span>
       </div>
 
-      <div class="members">
-        <div class="member">
-          Ashutosh
-        </div>
-        <div class="member active">
-          Aayush
-        </div>
-        <div class="member">
-          Shrey
-        </div>
-        <div class="member">
-          Roshan
-        </div>
-        <div class="member">
-          Rootool
-        </div>
-      </div>
+      <div class="members" id="members">
 
-      <div class="LOGO">
-        SNAPPY
-        <p style="font-size: 20px">
-          A new way of messaging.
-        </p>
       </div>
-
 
     </div>
 
@@ -49,94 +28,34 @@
         Aayush
       </div>
 
-      <div class="messages">
+      <div class="messages" id = "messages">
 
-        <div class="message-user">
-          Hey
-        </div>
-
-        <div class="message">
-          There
-        </div>
-
-        <div class="message-user">
-          I am
-        </div>
-
-        <div class="message">
-          using
-        </div>
-
-        <div class="message-user">
-          SNAPPY!!!
-        </div>
-
-        <div class="message">
-          Wow.
-        </div>
-
-        <div class="message-user">
-          Do u
-        </div>
-
-        <div class="message">
-          think
-        </div>
-
-        <div class="message-user">
-          I can
-        </div>
-
-        <div class="message">
-          use it??
-        </div>
-
-        <div class="message-user">
-          Hey
-        </div>
-
-        <div class="message">
-          There
-        </div>
-
-        <div class="message-user">
-          I am
-        </div>
-
-        <div class="message">
-          using
-        </div>
-
-        <div class="message-user">
-          SNAPPY!!!
-        </div>
-
-        <div class="message">
-          Wow.
-        </div>
-
-        <div class="message-user">
-          Do u
-        </div>
-
-        <div class="message">
-          think
-        </div>
-
-        <div class="message-user">
-          I can
-        </div>
-
-        <div class="message">
-          use it??
-        </div>
 
       </div>
 
       <div class="chat-form">
-        <input type="text" class="chat-message" placeholder="Type a message" />
+        <input type="hidden" id="chat-id" />
+        <input type="text" id="message-text" class="chat-message" placeholder="Type a message" />
+        <button id="send-btn"><i class="fa fa-arrow-circle-right" aria-hidden="true"></i>Send</button>
       </div>
 
     </div>
+
+    <script src="https://www.gstatic.com/firebasejs/3.6.7/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyD-BtsCEDrWcDbKN7ccvBy-apilWVfX3tE",
+        authDomain: "potterwatch-3b63f.firebaseapp.com",
+        databaseURL: "https://potterwatch-3b63f.firebaseio.com",
+        storageBucket: "potterwatch-3b63f.appspot.com",
+        messagingSenderId: "158531709346"
+      };
+      firebase.initializeApp(config);
+    </script>
+
+    <script type="text/javascript" src="functions.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+    <script type="text/javascript" src="chat.js"></script>
   </body>
 </html>
